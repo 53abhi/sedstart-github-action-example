@@ -11,9 +11,9 @@ jobs:
         uses: sedinqa/sedstart@v1
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY }}
-          project_id: 459
-          test_id: 3738
-          profile_id: 659
+          project_id: 470
+          test_id: 3780
+          profile_id: 670
           browser: chrome
           headless: false
           environment: QA
