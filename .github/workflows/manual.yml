@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Running Sedstart
-        uses: sedstart/runcloud@main
+        uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.SEDSTART_KEY }}
           project_id: 418
