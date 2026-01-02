@@ -5,9 +5,9 @@ on:
 
 jobs:
   sedstart-run:
-    runs-on: windows-latest
+    runs-on: macos-15
     steps:
-      - name: Running Sedstart
+      - name: Trigger SedStart test run
         uses: sedstart/runlocal@main
         with:
           api_key: ${{ secrets.SEDSTART_KEY }}
