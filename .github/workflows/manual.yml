@@ -14,6 +14,6 @@ jobs:
           project_id: 418
           suite_id: 391
           profile_id: 848
-          browser: 'firefox'
+          browser: chrome
           headless: false
           environment: QA
