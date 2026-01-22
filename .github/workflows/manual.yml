@@ -5,15 +5,15 @@ on:
 
 jobs:
   sedstart-run:
-    runs-on: macos-15
+    runs-on: ubuntu-latest
     steps:
       - name: Trigger SedStart test run
         uses: sedstart/runlocal@main
         with:
-          api_key: ${{ secrets.SEDSTART_KEY }}
-          project_id: 418
-          test_id: 1940
-          profile_id: 848
+          api_key: ${{ secrets.SEDSTART_API_KEY }}
+          project_id: 262
+          test_id: 2149
+          profile_id: 949
           browser: chrome
           headless: false
           environment: QA
