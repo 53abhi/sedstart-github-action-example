@@ -18,8 +18,7 @@ jobs:
         uses: sedstart/runlocal@integration
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY }}
-          project_id: 262
-          test_id: 2149
-          profile_id: 949
+          project_id: 612
+          test_id: 4876
+          profile_id: 1017
           browser: chrome
-          environment: QA
