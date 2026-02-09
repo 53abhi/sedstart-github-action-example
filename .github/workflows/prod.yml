@@ -17,6 +17,6 @@ jobs:
           project_id: 260
           test_id: 1153
           profile_id: 970
-          browser: chrome
+          browser: "chrome"
           headless: false
-          environment: QA
+          environment: "QA"
