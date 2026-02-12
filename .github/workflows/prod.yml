@@ -1,4 +1,4 @@
-name: Sedstart Local Linux
+name: Sedstart QA
 
 on:
   workflow_dispatch:
@@ -7,16 +7,13 @@ jobs:
   sedstart-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Playwright
-        run: npm install -g playwright@1.52.0
-
       - name: Trigger SedStart test run
-        uses: sedstart/runlocal@integration
+        uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
-          project_id: 260
-          test_id: 1153
-          profile_id: 970
-          browser: "chrome"
+          project_id: 398
+          test_id: 2211
+          profile_id: 801
+          browser: chrome
           headless: false
           environment: "QA"
