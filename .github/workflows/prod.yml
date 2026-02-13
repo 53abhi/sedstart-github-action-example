@@ -1,4 +1,4 @@
-name: TC13 - Missing test_id
+name: TC14 - Missing project_id
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
       - uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.API_KEY_A }}
-          project_id: 418
+          test_id: 1974
           profile_id: 848
           browser: chrome
           headless: false
