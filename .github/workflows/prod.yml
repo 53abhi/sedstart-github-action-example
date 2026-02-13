@@ -1,4 +1,4 @@
-name: TC08 - Local Project 398 wrong profile
+name: TC09 - Local Invalid API key
 
 on:
   workflow_dispatch:
@@ -13,9 +13,9 @@ jobs:
       - name: Trigger SedStart test run
         uses: sedstart/runlocal@v1
         with:
-          api_key: ${{ secrets.API_KEY_B }}
-          project_id: 398
-          test_id: 2170
+          api_key: invalid-key-123
+          project_id: 418
+          test_id: 1974
           profile_id: 848
           browser: chrome
           headless: false
