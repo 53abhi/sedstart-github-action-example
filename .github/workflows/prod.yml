@@ -1,4 +1,4 @@
-name: TC11 - Random test_id
+name: TC12 - Random profile_id
 
 on:
   workflow_dispatch:
@@ -11,8 +11,8 @@ jobs:
         with:
           api_key: ${{ secrets.API_KEY_A }}
           project_id: 418
-          test_id: 9999
-          profile_id: 848
+          test_id: 1974
+          profile_id: 9999
           browser: chrome
           headless: false
           environment: "QA"
