@@ -1,4 +1,4 @@
-name: TC12 - Local Random profile_id
+name: TC13 - Local Missing test_id
 
 on:
   workflow_dispatch:
@@ -15,8 +15,7 @@ jobs:
         with:
           api_key: ${{ secrets.API_KEY_A }}
           project_id: 418
-          test_id: 1974
-          profile_id: 9999
+          profile_id: 848
           browser: chrome
           headless: false
           environment: QA
