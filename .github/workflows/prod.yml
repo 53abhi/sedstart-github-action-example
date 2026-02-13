@@ -1,4 +1,4 @@
-name: TC04 - API B with Project 418
+name: TC05 - Project 418 with test 2170
 
 on:
   workflow_dispatch:
@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: sedstart/runcloud@v1
         with:
-          api_key: ${{ secrets.API_KEY_B }}
+          api_key: ${{ secrets.API_KEY_A }}
           project_id: 418
           test_id: 2170
-          profile_id: 900
+          profile_id: 848
           browser: chrome
           headless: false
           environment: "QA"
