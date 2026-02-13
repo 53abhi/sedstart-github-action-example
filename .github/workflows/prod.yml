@@ -1,4 +1,4 @@
-name: TC04 - Local API B with Project 418
+name: TC06 - Local Project 398 with test 1974
 
 on:
   workflow_dispatch:
@@ -13,10 +13,10 @@ jobs:
       - name: Trigger SedStart test run
         uses: sedstart/runlocal@v1
         with:
-          api_key: ${{ secrets.API_KEY_A }}
-          project_id: 418
-          test_id: 2170
-          profile_id: 848
+          api_key: ${{ secrets.API_KEY_B }}
+          project_id: 398
+          test_id: 1974
+          profile_id: 900
           browser: chrome
           headless: false
           environment: QA
