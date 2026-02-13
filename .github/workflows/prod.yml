@@ -1,4 +1,4 @@
-name: TC18 - Non-numeric project_id
+name: TC19 - Non-numeric profile_id
 
 on:
   workflow_dispatch:
@@ -10,9 +10,9 @@ jobs:
       - uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.API_KEY_A }}
-          project_id: xyz
+          project_id: 418
           test_id: 1974
-          profile_id: 848
+          profile_id: chrome
           browser: chrome
           headless: false
           environment: "QA"
