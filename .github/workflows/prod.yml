@@ -1,4 +1,4 @@
-name: TC06 - Project 398 with test 1974
+name: TC07 - Project 418 wrong profile
 
 on:
   workflow_dispatch:
@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: sedstart/runcloud@v1
         with:
-          api_key: ${{ secrets.API_KEY_B }}
-          project_id: 398
+          api_key: ${{ secrets.API_KEY_A }}
+          project_id: 418
           test_id: 1974
           profile_id: 900
           browser: chrome
