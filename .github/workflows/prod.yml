@@ -1,17 +1,13 @@
-name: TC18 - Local Non-numeric project_id
+name: TC18 - Non-numeric project_id
 
 on:
   workflow_dispatch:
 
 jobs:
-  sedstart-run:
-    runs-on: windows-latest
+  run:
+    runs-on: ubuntu-latest
     steps:
-      - name: Install Playwright
-        run: npm install -g playwright@1.52.0
-
-      - name: Trigger SedStart test run
-        uses: sedstart/runlocal@v1
+      - uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.API_KEY_A }}
           project_id: xyz
@@ -19,4 +15,3 @@ jobs:
           profile_id: 848
           browser: chrome
           headless: false
-          environment: QA
