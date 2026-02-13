@@ -1,18 +1,22 @@
-name: TC23 - All parameters invalid
+name: TC01 - Local Valid execution Project 418
 
 on:
   workflow_dispatch:
 
 jobs:
-  run:
-    runs-on: ubuntu-latest
+  sedstart-run:
+    runs-on: windows-latest
     steps:
-      - uses: sedstart/runcloud@v1
+      - name: Install Playwright
+        run: npm install -g playwright@1.52.0
+
+      - name: Trigger SedStart test run
+        uses: sedstart/runlocal@v1
         with:
-          api_key: invalid-key
-          project_id: 999
-          test_id: 999
-          profile_id: 999
+          api_key: ${{ secrets.API_KEY_A }}
+          project_id: 418
+          test_id: 1974
+          profile_id: 848
           browser: chrome
           headless: false
-          environment: "QA"
+          environment: QA
