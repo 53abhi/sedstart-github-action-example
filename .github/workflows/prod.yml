@@ -1,4 +1,4 @@
-name: TC22 - Edge browser valid mapping
+name: TC23 - All parameters invalid
 
 on:
   workflow_dispatch:
@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: sedstart/runcloud@v1
         with:
-          api_key: ${{ secrets.API_KEY_A }}
-          project_id: 418
-          test_id: 1974
-          profile_id: 848
-          browser: "edge"
+          api_key: invalid-key
+          project_id: 999
+          test_id: 999
+          profile_id: 999
+          browser: chrome
           headless: false
           environment: "QA"
