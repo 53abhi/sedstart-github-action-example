@@ -1,4 +1,4 @@
-name: TC19 - Local Non-numeric profile_id
+name: TC22 - Local Edge browser valid mapping
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
           api_key: ${{ secrets.API_KEY_A }}
           project_id: 418
           test_id: 1974
-          profile_id: chrome
-          browser: chrome
+          profile_id: 848
+          browser: edge
           headless: false
           environment: QA
