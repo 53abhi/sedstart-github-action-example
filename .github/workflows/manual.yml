@@ -1,11 +1,11 @@
-name: Sedstart Local Linux
+name: Sedstart Local Windows
 
 on:
   workflow_dispatch:
 
 jobs:
   sedstart-run:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Install Playwright
         run: npm install -g playwright@1.52.0
