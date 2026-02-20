@@ -1,4 +1,4 @@
-name: TC18 - Non-numeric project_id
+name: Soft Assert
 
 on:
   workflow_dispatch:
@@ -9,9 +9,10 @@ jobs:
     steps:
       - uses: sedstart/runcloud@v1
         with:
-          api_key: ${{ secrets.API_KEY_A }}
-          project_id: 398
-          test_id: abc
+          api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
+          project_id: 418
+          test_id: 2224
           profile_id: 848
           browser: chrome
           headless: false
+          environment: "QA"
