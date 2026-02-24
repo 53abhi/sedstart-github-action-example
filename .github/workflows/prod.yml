@@ -11,8 +11,8 @@ jobs:
         uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
-          project_id: 0000
-          test_id: 2225
+          project_id: 418
+          test_id: 
           profile_id: 848
           browser: chrome
           headless: false
