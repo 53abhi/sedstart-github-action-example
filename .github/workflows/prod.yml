@@ -1,17 +1,18 @@
-name: Soft Assert
+name: Sedstart QA
 
 on:
   workflow_dispatch:
 
 jobs:
-  run:
+  sedstart-run:
     runs-on: ubuntu-latest
     steps:
-      - uses: sedstart/runcloud@v1
+      - name: Trigger SedStart test run
+        uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 418
-          test_id: 2226
+          test_id: 2224
           profile_id: 848
           browser: chrome
           headless: false
