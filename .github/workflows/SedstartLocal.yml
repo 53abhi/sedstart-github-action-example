@@ -11,10 +11,10 @@ jobs:
         run: npm install -g playwright@1.52.0
 
       - name: Trigger SedStart test run
-        uses: sedstart/runlocal@v1
+        uses: sedstart/runlocal@main
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
-          project_id: 418
+          project_id: xyz
           test_id: 2224
           profile_id: 848
           browser: "chrome"
