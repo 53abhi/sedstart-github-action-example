@@ -10,7 +10,7 @@ jobs:
       - name: Run TC02
         uses: sedstart/runcloud@v1
         with:
-          api_key: ${{ secrets.API_KEY_A }}
+          api_key: INVALID_API_KEY
           project_id: 612
           test_id: 4905
           profile_id: 1306
