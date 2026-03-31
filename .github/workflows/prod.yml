@@ -1,18 +1,21 @@
-name: TC02 - API Key A with Project 398
+name: Sedstart Local Linux
 
 on:
   workflow_dispatch:
 
 jobs:
-  tc02:
+  sedstart-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Run TC02
-        uses: sedstart/runcloud@v1
+      - name: Install Playwright
+        run: npm install -g playwright@1.52.0
+
+      - name: Trigger SedStart test run
+        uses: sedstart/runlocal@v1
         with:
-          api_key: ${{ secrets.API_KEY_A }}
+          api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 612
           test_id: 4905
-          profile_id: abc
+          profile_id: 1306
           browser: chrome
           headless: false
