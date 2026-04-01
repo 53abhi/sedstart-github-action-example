@@ -19,4 +19,3 @@ jobs:
           profile_id: 1306
           browser: chrome
           headless: false
-          environment: "QA"
