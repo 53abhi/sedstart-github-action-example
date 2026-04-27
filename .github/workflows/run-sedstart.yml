@@ -1,4 +1,4 @@
-name: Run SedStart Test
+name: Run SedStart
 
 on:
   workflow_dispatch:
