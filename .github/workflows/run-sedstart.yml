@@ -1,11 +1,11 @@
-name: Sedstart Local Windows
+name: Sedstart Local macOS
 
 on:
   workflow_dispatch:
 
 jobs:
   sedstart-run:
-    runs-on: windows-latest
+    runs-on: macos-15
     steps:
       - name: Install Playwright
         run: npm install -g playwright@1.52.0
@@ -16,7 +16,7 @@ jobs:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 503
           test_id: 2432
-          profile_id: 000
-          browser: 'msedge'
+          profile_id: 1007
+          browser: chrome
           headless: false
           environment: QA
