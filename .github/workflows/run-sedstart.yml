@@ -1,4 +1,4 @@
-name: Sedstart QA
+name: Sedstart QA 1
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
         uses: sedstart/runcloud@v1
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
-          project_id: 
+          project_id: 000
           suite_id: 441
           test_id: 2432
           profile_id: 1007
