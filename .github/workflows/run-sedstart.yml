@@ -12,7 +12,6 @@ jobs:
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 503
-          profile_id: 
           suite_id: 441
           browser: 'firefox'
           headless: false
