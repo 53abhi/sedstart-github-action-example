@@ -13,6 +13,6 @@ jobs:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 750
           test_id: 8500
-          profile_id: 00
-          browser: chrome
+          profile_id: 
+          browser: 'msedge'
           headless: false
