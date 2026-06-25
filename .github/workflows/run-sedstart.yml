@@ -15,7 +15,7 @@ jobs:
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 750
-          test_id: 8530
+          test_id: 8500
           profile_id: 1358
           browser: 'webkit'
           headless: false
