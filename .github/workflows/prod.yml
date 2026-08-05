@@ -1,4 +1,4 @@
-name: Sedstart Has Text
+name: Sedstart
 
 on:
   workflow_dispatch:
@@ -11,8 +11,8 @@ jobs:
         uses: sedstart/runcloud@main
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
-          project_id: 503
-          test_id: 3436
+          project_id: 644
+          test_id: 4077
           browser: chrome
           headless: false
           environment: "QA"
