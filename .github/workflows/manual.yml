@@ -14,8 +14,8 @@ jobs:
         uses: sedstart/runlocal@main
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
-          project_id: 503
-          test_id: 3453
+          project_id: 1272
+          test_id: 11621
+          profile_id: 2230
           browser: chrome
           headless: false
-          environment: "QA"
